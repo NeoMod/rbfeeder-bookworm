@@ -18,9 +18,12 @@ protobuf-c-compiler libncurses-dev libjansson-dev libglib2.0-dev libprotobuf-c-d
 
 ```bash
 $ sudo apt-get install build-essential fakeroot debhelper librtlsdr-dev pkg-config libncurses5-dev protobuf-c-compiler libjansson-dev libglib2.0-dev libprotobuf-c-dev libcurl4-openssl-dev dh-sysuser devscripts librtlsdr-dev
-$ dpkg-buildpackage -b --no-sign
+$ git clone https://github.com/NeoMod/rbfeeder-bookworm.git
+$ cd rbfeeder-bookworm/
+$ dpkg-buildpackage -b
+$ 
 ```
-## dh-systemd is no longer needed since it has been merged into debhelper and the transitional package no longer exists.
+### dh-systemd is no longer needed since it has been merged into debhelper and the transitional package no longer exists.
 
 ### Actually building it
 
